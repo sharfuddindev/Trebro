@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trebro - Agricultural Machinery Excellence</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6B35',
+                        secondary: '#6B7280'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="px-4 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="text-2xl font-['Pacifico'] text-primary">Trebro</div>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+                    <a href="#products" class="text-gray-700 hover:text-primary transition-colors">Products</a>
+                    <a href="#autostack" class="text-gray-700 hover:text-primary transition-colors">AutoStack3</a>
+                    <a href="#tsr-tss" class="text-gray-700 hover:text-primary transition-colors">TSR/TSS Systems</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+                    <a href="#support" class="text-gray-700 hover:text-primary transition-colors">Support</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                </div>
+
+                <button class="lg:hidden w-8 h-8 flex items-center justify-center" id="mobile-menu-btn">
+                    <i class="ri-menu-line text-xl"></i>
+                </button>
+            </div>
+
+            <div class="lg:hidden mt-4 hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+                    <a href="#products" class="text-gray-700 hover:text-primary transition-colors">Products</a>
+                    <a href="#autostack" class="text-gray-700 hover:text-primary transition-colors">AutoStack3</a>
+                    <a href="#tsr-tss" class="text-gray-700 hover:text-primary transition-colors">TSR/TSS Systems</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+                    <a href="#support" class="text-gray-700 hover:text-primary transition-colors">Support</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="relative min-h-screen flex items-center" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20agricultural%20machinery%20in%20vast%20green%20field%20with%20grey%20and%20orange%20equipment%2C%20professional%20industrial%20photography%2C%20clean%20background%20with%20rolling%20hills%2C%20bright%20daylight%2C%20high-tech%20farming%20equipment%2C%20sophisticated%20machinery%20design%2C%20expansive%20agricultural%20landscape%2C%20premium%20quality%20image&width=1920&height=1080&seq=hero-bg&orientation=landscape'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent"></div>
+        <div class="relative w-full px-4 lg:px-8">
+            <div class="max-w-6xl mx-auto">
+                <div class="lg:w-1/2">
+                    <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        Agricultural Excellence Through Innovation
+                    </h1>
+                    <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                        Trebro delivers cutting-edge agricultural machinery solutions with our revolutionary AutoStack3 and TSR/TSS systems, engineered for maximum efficiency and reliability in modern farming operations.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-primary text-white px-8 py-4 !rounded-button font-semibold hover:bg-orange-600 transition-colors whitespace-nowrap">
+                            Request Demo
+                        </button>
+                        <button class="border-2 border-gray-300 text-gray-700 px-8 py-4 !rounded-button font-semibold hover:border-primary hover:text-primary transition-colors whitespace-nowrap">
+                            View Products
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Featured Product Lines</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover our flagship machinery designed to revolutionize agricultural operations with advanced automation and superior performance.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=AutoStack3%20agricultural%20stacking%20machine%20in%20grey%20and%20orange%20color%20scheme%2C%20modern%20industrial%20design%2C%20professional%20equipment%20photography%2C%20clean%20white%20background%2C%20high-tech%20farming%20machinery%2C%20sophisticated%20engineering%2C%20premium%20quality%20agricultural%20equipment&width=600&height=400&seq=autostack3-card&orientation=landscape');"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">AutoStack3 System</h3>
+                        <p class="text-gray-600 mb-6">
+                            Revolutionary automated stacking technology that maximizes efficiency and reduces labor costs in agricultural operations.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-gray-700">
+                                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                    <i class="ri-check-line text-primary"></i>
+                                </div>
+                                Advanced automation technology
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                    <i class="ri-check-line text-primary"></i>
+                                </div>
+                                High-capacity processing
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                    <i class="ri-check-line text-primary"></i>
+                                </div>
+                                Reduced labor requirements
+                            </li>
+                        </ul>
+                        <button class="bg-primary text-white px-6 py-3 !rounded-button font-semibold hover:bg-orange-600 transition-colors whitespace-nowrap">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=TSR%20TSS%20agricultural%20systems%20machinery%20in%20grey%20and%20orange%20color%20scheme%2C%20industrial%20farming%20equipment%2C%20professional%20photography%2C%20clean%20white%20background%2C%20modern%20agricultural%20technology%2C%20sophisticated%20mechanical%20design%2C%20premium%20farming%20machinery&width=600&height=400&seq=tsr-tss-card&orientation=landscape');"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">TSR/TSS Systems</h3>
+                        <p class="text-gray-600 mb-6">
+                            Comprehensive agricultural processing systems engineered for versatility and optimal performance across various farming applications.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-gray-700">
+                                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                    <i class="ri-check-line text-primary"></i>
+                                </div>
+                                Versatile system configurations
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                    <i class="ri-check-line text-primary"></i>
+                                </div>
+                                Superior processing capabilities
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                    <i class="ri-check-line text-primary"></i>
+                                </div>
+                                Customizable solutions
+                            </li>
+                        </ul>
+                        <button class="bg-primary text-white px-6 py-3 !rounded-button font-semibold hover:bg-orange-600 transition-colors whitespace-nowrap">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="autostack" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">AutoStack3 Innovation</h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        The AutoStack3 represents the pinnacle of agricultural automation technology, featuring our signature grey and orange design that combines functionality with visual appeal.
+                    </p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="ri-settings-3-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Advanced Automation</h4>
+                                <p class="text-gray-600">Intelligent systems that adapt to various crop types and field conditions automatically.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="ri-speed-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">High Performance</h4>
+                                <p class="text-gray-600">Process up to 15,000 units per hour with consistent quality and precision.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="ri-shield-check-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Reliable Operation</h4>
+                                <p class="text-gray-600">Built for continuous operation with minimal maintenance requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <h5 class="font-semibold text-gray-900 mb-4">Technical Specifications</h5>
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <span class="text-gray-600">Capacity:</span>
+                                <span class="text-gray-900 font-medium ml-2">15,000 units/hour</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Power:</span>
+                                <span class="text-gray-900 font-medium ml-2">75 HP</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Weight:</span>
+                                <span class="text-gray-900 font-medium ml-2">12,500 lbs</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Width:</span>
+                                <span class="text-gray-900 font-medium ml-2">14.5 ft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="h-96 bg-cover bg-center rounded-2xl shadow-lg" style="background-image: url('https://readdy.ai/api/search-image?query=AutoStack3%20agricultural%20machinery%20detailed%20view%20in%20grey%20and%20orange%20color%20scheme%2C%20professional%20industrial%20photography%2C%20modern%20farming%20equipment%2C%20sophisticated%20engineering%20design%2C%20clean%20agricultural%20setting%2C%20high-quality%20machinery%20construction%2C%20premium%20agricultural%20technology&width=600&height=600&seq=autostack3-detail&orientation=squarish');"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tsr-tss" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">TSR/TSS Systems Portfolio</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive agricultural processing solutions designed for maximum versatility and performance across diverse farming operations.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="h-48 bg-cover bg-center rounded-lg mb-6" style="background-image: url('https://readdy.ai/api/search-image?query=TSR%20agricultural%20system%20machinery%20in%20grey%20and%20orange%20colors%2C%20compact%20design%2C%20professional%20equipment%20photography%2C%20modern%20farming%20technology%2C%20clean%20industrial%20background%2C%20sophisticated%20mechanical%20engineering%2C%20premium%20agricultural%20equipment&width=400&height=300&seq=tsr-system&orientation=landscape');"></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">TSR Series</h3>
+                    <p class="text-gray-600 mb-4">Compact and efficient systems perfect for medium-scale operations with advanced processing capabilities.</p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center">
+                            <div class="w-4 h-4 flex items-center justify-center mr-2">
+                                <i class="ri-arrow-right-line text-primary text-xs"></i>
+                            </div>
+                            Processing capacity: 8,000 units/hour
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-4 h-4 flex items-center justify-center mr-2">
+                                <i class="ri-arrow-right-line text-primary text-xs"></i>
+                            </div>
+                            Compact footprint design
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-4 h-4 flex items-center justify-center mr-2">
+                                <i class="ri-arrow-right-line text-primary text-xs"></i>
+                            </div>
+                            Easy maintenance access
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="h-48 bg-cover bg-center rounded-lg mb-6" style="background-image: url('https://readdy.ai/api/search-image?query=TSS%20agricultural%20system%20machinery%20in%20grey%20and%20orange%20colors%2C%20larger%20industrial%20design%2C%20professional%20equipment%20photography%2C%20modern%20farming%20technology%2C%20clean%20industrial%20background%2C%20sophisticated%20mechanical%20engineering%2C%20premium%20agricultural%20equipment&width=400&height=300&seq=tss-system&orientation=landscape');"></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">TSS Series</h3>
+                    <p class="text-gray-600 mb-4">Heavy-duty systems engineered for large-scale agricultural operations with maximum throughput capabilities.</p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center">
+                            <div class="w-4 h-4 flex items-center justify-center mr-2">
+                                <i class="ri-arrow-right-line text-primary text-xs"></i>
+                            </div>
+                            Processing capacity: 12,000 units/hour
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-4 h-4 flex items-center justify-center mr-2">
+                                <i class="ri-arrow-right-line text-primary text-xs"></i>
+                            </div>
+                            Heavy-duty construction
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-4 h-4 flex items-center justify-center mr-2">
+                                <i class="ri-arrow-right-line text-primary text-xs"></i>
+                            </div>
+                            Advanced control systems
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="h-48 bg-cover bg-center rounded-lg mb-6" style="background-image: url('https://readdy.ai/api/search-image?query=Custom%20TSR%20TSS%20agricultural%20system%20machinery%20in%20grey%20and%20orange%20colors%2C%20modular%20design%2C%20professional%20equipment%20photography%2C%20modern%20farming%20technology%2C%20clean%20industrial%20background%2C%20sophisticated%20mechanical%20engineering%2C%20premium%20agricultural%20equipment&width=400&height=300&seq=custom-system&orientation=landscape');"></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Custom Solutions</h3>
+                    <p class="text-gray-600 mb-4">Tailored systems designed to meet specific operational requirements and unique agricultural challenges.</p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center">
+                            <div class="w-4 h-4 flex items-center justify-center mr-2">
+                                <i class="ri-arrow-right-line text-primary text-xs"></i>
+                            </div>
+                            Customizable configurations
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-4 h-4 flex items-center justify-center mr-2">
+                                <i class="ri-arrow-right-line text-primary text-xs"></i>
+                            </div>
+                            Specialized applications
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-4 h-4 flex items-center justify-center mr-2">
+                                <i class="ri-arrow-right-line text-primary text-xs"></i>
+                            </div>
+                            Expert consultation included
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Performance Comparison</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b-2 border-gray-200">
+                                <th class="text-left py-4 px-4 font-semibold text-gray-900">Specification</th>
+                                <th class="text-center py-4 px-4 font-semibold text-gray-900">TSR Series</th>
+                                <th class="text-center py-4 px-4 font-semibold text-gray-900">TSS Series</th>
+                                <th class="text-center py-4 px-4 font-semibold text-gray-900">AutoStack3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 px-4 text-gray-700">Processing Capacity</td>
+                                <td class="py-4 px-4 text-center text-gray-900">8,000 units/hr</td>
+                                <td class="py-4 px-4 text-center text-gray-900">12,000 units/hr</td>
+                                <td class="py-4 px-4 text-center text-primary font-semibold">15,000 units/hr</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 px-4 text-gray-700">Power Requirement</td>
+                                <td class="py-4 px-4 text-center text-gray-900">45 HP</td>
+                                <td class="py-4 px-4 text-center text-gray-900">60 HP</td>
+                                <td class="py-4 px-4 text-center text-gray-900">75 HP</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 px-4 text-gray-700">Operating Width</td>
+                                <td class="py-4 px-4 text-center text-gray-900">12 ft</td>
+                                <td class="py-4 px-4 text-center text-gray-900">13.5 ft</td>
+                                <td class="py-4 px-4 text-center text-gray-900">14.5 ft</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-4 text-gray-700">Automation Level</td>
+                                <td class="py-4 px-4 text-center text-gray-900">Semi-Automatic</td>
+                                <td class="py-4 px-4 text-center text-gray-900">Advanced</td>
+                                <td class="py-4 px-4 text-center text-primary font-semibold">Full Automation</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Services & Support</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive support services to ensure optimal performance and longevity of your Trebro equipment investment.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-tools-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Maintenance Services</h3>
+                    <p class="text-gray-600">
+                        Scheduled maintenance programs and emergency repair services to keep your equipment running at peak performance.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-customer-service-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Technical Support</h3>
+                    <p class="text-gray-600">
+                        24/7 technical assistance from certified Trebro specialists with remote diagnostics capabilities.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-graduation-cap-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Training Programs</h3>
+                    <p class="text-gray-600">
+                        Comprehensive operator training and certification programs for safe and efficient equipment operation.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-settings-2-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Parts Availability</h3>
+                    <p class="text-gray-600">
+                        Extensive parts inventory with fast shipping to minimize downtime and maintain operational efficiency.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Regional Support Network</h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Our extensive dealer network ensures local support and service availability across North America, providing you with reliable assistance whenever you need it.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="ri-map-pin-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Nationwide Coverage</h4>
+                                <p class="text-gray-600">Over 150 authorized dealers across the United States and Canada.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="ri-time-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Rapid Response</h4>
+                                <p class="text-gray-600">Average response time of less than 4 hours for emergency service calls.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="ri-download-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Digital Resources</h4>
+                                <p class="text-gray-600">Access manuals, parts catalogs, and training materials through our online portal.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <button class="bg-primary text-white px-8 py-4 !rounded-button font-semibold hover:bg-orange-600 transition-colors whitespace-nowrap">
+                            Find Local Dealer
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="h-96 bg-cover bg-center rounded-2xl shadow-lg" style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="h-96 bg-cover bg-center rounded-2xl shadow-lg" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20agricultural%20machinery%20manufacturing%20facility%2C%20industrial%20production%20line%2C%20grey%20and%20orange%20equipment%20being%20assembled%2C%20professional%20factory%20photography%2C%20clean%20industrial%20environment%2C%20advanced%20manufacturing%20technology%2C%20quality%20control%20processes&width=600&height=600&seq=manufacturing&orientation=squarish');"></div>
+                
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">About Trebro</h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        For over four decades, Trebro has been at the forefront of agricultural machinery innovation, delivering cutting-edge solutions that transform farming operations worldwide.
+                    </p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Innovation Heritage</h4>
+                            <p class="text-gray-600">Founded in 1982, we've consistently pushed the boundaries of agricultural technology with groundbreaking machinery designs.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Manufacturing Excellence</h4>
+                            <p class="text-gray-600">Our state-of-the-art facility employs advanced manufacturing processes and rigorous quality control standards.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Industry Leadership</h4>
+                            <p class="text-gray-600">Recognized globally for our commitment to innovation, quality, and customer satisfaction in agricultural machinery.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-6 text-center">
+                        <div>
+                            <div class="text-3xl font-bold text-primary mb-2">40+</div>
+                            <div class="text-sm text-gray-600">Years of Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-primary mb-2">5,000+</div>
+                            <div class="text-sm text-gray-600">Machines Delivered</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-primary mb-2">25+</div>
+                            <div class="text-sm text-gray-600">Countries Served</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ready to transform your agricultural operations? Contact our team of experts to discuss your specific requirements and find the perfect Trebro solution.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Product Interest</label>
+                            <div class="relative">
+                                <button type="button" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-left text-sm bg-white flex items-center justify-between" id="product-select">
+                                    <span>Select a product</span>
+                                    <div class="w-5 h-5 flex items-center justify-center">
+                                        <i class="ri-arrow-down-s-line"></i>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm resize-none"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary text-white py-4 !rounded-button font-semibold hover:bg-orange-600 transition-colors whitespace-nowrap">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="ri-map-pin-line text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Headquarters</h4>
+                                    <p class="text-gray-600">1485 Industrial Drive<br>Imlay City, MI 48444<br>United States</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="ri-phone-line text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Phone</h4>
+                                    <p class="text-gray-600">+1 (810) 724-8800</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="ri-mail-line text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
+                                    <p class="text-gray-600">info@trebro.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="ri-time-line text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Business Hours</h4>
+                                    <p class="text-gray-600">Monday - Friday: 8:00 AM - 5:00 PM EST<br>Saturday - Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Quick Actions</h3>
+                        <div class="space-y-4">
+                            <button class="w-full bg-gray-100 text-gray-700 py-3 px-4 !rounded-button font-medium hover:bg-gray-200 transition-colors whitespace-nowrap text-left">
+                                Request Product Demo
+                            </button>
+                            <button class="w-full bg-gray-100 text-gray-700 py-3 px-4 !rounded-button font-medium hover:bg-gray-200 transition-colors whitespace-nowrap text-left">
+                                Download Brochures
+                            </button>
+                            <button class="w-full bg-gray-100 text-gray-700 py-3 px-4 !rounded-button font-medium hover:bg-gray-200 transition-colors whitespace-nowrap text-left">
+                                Find Local Dealer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-4 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="text-2xl font-['Pacifico'] text-primary mb-4">Trebro</div>
+                    <p class="text-gray-400 mb-6">
+                        Leading agricultural machinery manufacturer delivering innovative solutions for modern farming operations worldwide.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                            <i class="ri-facebook-fill"></i>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                            <i class="ri-twitter-fill"></i>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                            <i class="ri-linkedin-fill"></i>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                            <i class="ri-youtube-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Products</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">AutoStack3 System</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">TSR Series</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">TSS Series</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Custom Solutions</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Parts & Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Technical Support</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Maintenance Services</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Training Programs</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Dealer Network</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">About Trebro</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">News & Events</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Warranty</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2024 Trebro Manufacturing. All rights reserved.
+                </p>
+                <div class="flex space-x-6 text-sm text-gray-400">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script id="mobile-menu-toggle">
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+
+    <script id="smooth-scrolling">
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script id="product-select-dropdown">
+        document.addEventListener('DOMContentLoaded', function() {
+            const productSelect = document.getElementById('product-select');
+            
+            if (productSelect) {
+                productSelect.addEventListener('click', function() {
+                    const options = ['AutoStack3 System', 'TSR Series', 'TSS Series', 'Custom Solutions', 'Parts & Service'];
+                    const currentText = this.querySelector('span').textContent;
+                    
+                    if (currentText === 'Select a product') {
+                        this.querySelector('span').textContent = options[0];
+                    } else {
+                        const currentIndex = options.indexOf(currentText);
+                        const nextIndex = (currentIndex + 1) % options.length;
+                        this.querySelector('span').textContent = options[nextIndex];
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
